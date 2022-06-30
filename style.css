@@ -1,0 +1,395 @@
+body{
+    background-image: url('images/image-hero-desktop.jpg') ;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(243, 243, 243);
+   
+}
+
+nav{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 15vh;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+li{
+    list-style-type: none;
+    cursor: pointer;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-container{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.join-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: white;
+    border: 1px solid white;
+    border-radius: 11px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    
+}
+.logo-master-img{
+    position: relative;
+    top: -25px;
+}
+p{
+    color: hsl(0, 0%, 48%);
+}
+
+
+.interactive-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.join-btn, .select-reward-btn, .continue-btn{
+    color: white;
+    font-size: 1.1rem;
+    background: hsl(176, 50%, 47%);
+    border: 1px solid hsl(176, 50%, 47%);
+    border-radius: 30px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    cursor: pointer;
+
+}
+.join-btn:hover, .select-reward-btn:hover ,.continue-btn:hover{
+    background: hsl(176, 72%, 28%);
+    border: 1px solid hsl(176, 72%, 28%);
+    transition: 200ms;
+}
+.bookmark-btn{
+    color: hsl(0, 0%, 48%);
+    background: hsl(0, 0%, 83%);
+    border: 1px solid hsl(0, 0%, 83%);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px ;
+    font-size: larger;
+    height: 58px;
+    cursor: pointer;
+}
+.bookmark-btn.bookmarked{
+    color: hsl(176, 50%, 47%);
+    border: 1px solid hsl(176, 72%, 28%);
+}
+.bookmark-icon{
+    position: relative;
+    left: -5px;
+}
+
+.stats-div{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background: white;
+    border: 1px solid white;
+    border-radius: 11px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    padding: 5px;
+    height: 200px;
+}
+.donated-money, .days-left, .helpers-num{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.donated-money-div, .helpers-num-div{
+    border-right:0.05px solid hsl(0, 0%, 83%) ;
+    padding-right: 5px;
+}
+
+.donated-money-div, .helpers-num-div, .days-left-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+progress {
+    border-radius: 7px; 
+    width: 85%;
+    height: 15px;
+    position: relative;
+    top: -70px;
+}
+progress::-webkit-progress-bar {
+    border-radius: 7px;
+    background-color: hsl(0, 0%, 83%);
+}
+progress::-webkit-progress-value {
+    background-color: hsl(176, 50%, 47%);
+    border-radius: 10px;
+}
+
+/*second block */
+
+.project-infos-block{
+    background: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.about-the-project{
+    width: 80%;
+    margin-top: 40px;
+}
+
+.bamboo-stand-infos, .mahogany-special-stand-infos, .black-ed-stand-infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    border: 0.5px solid hsl(0, 0%, 83%);
+    border-radius: 10px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+.mahogany-special-stand-infos{
+    opacity: 0.5;
+    position: relative;
+    top:-30px;
+    pointer-events: none;
+}
+.black-ed-stand-infos{
+    height: 200px;
+}
+.left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.special-btn{
+    background: hsl(0, 0%, 48%);
+    border: 1px solid hsl(0, 0%, 48%);
+}
+.special-btn:hover{
+    background: hsl(0, 0%, 83%);
+    border: 1px solid hsl(0, 0%, 80%);
+}
+
+.top-div,.bottom-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.plegde-money{
+    color: hsl(176, 50%, 47%);
+    font-weight: bolder;
+}
+
+.num-left{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.pro-bottom{
+    position: relative;
+    top: -100px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.black-btn{
+    position: relative;
+    left: 165%;
+}
+
+
+/* modal styling*/
+
+.modal{
+    background: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 30px;
+    width: 60%;
+    position: absolute;
+    top: 170px;
+    z-index: 10;
+    opacity: 0;
+}
+.modal.active{
+    opacity: 1;
+}
+.modal-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#overlay{
+    background: hsla(0, 0%, 48%, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+
+}
+#overlay.active{
+    opacity: 1;
+    pointer-events: none;
+}
+.close-btn{
+    background: none;
+    font-size: 2rem;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+}
+
+.pledging-block{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 90%;
+    border: 0.5px solid hsl(0, 0%, 80%);
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+span{
+    font-weight: lighter;
+    color: hsl(176, 50%, 47%);
+    margin-left: 5px;
+    font-size: 1.1rem;
+}
+
+.header-infos-mahogany{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.money-block{
+    border-top: 0.5px solid hsl(0, 0%, 80%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+}
+
+.infos-mahogany-pladging, .black-pledging-radio{
+    display: flex;
+    flex-direction: column;
+
+}
+.left{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-infos-bamboo, .header-infos-black, .header-infos-mahogany{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.enter-value{
+    width: 25%;
+    border: hsl(176, 50%, 47%) 1px solid;
+    border-radius: 25px;
+    font-size: 1.3rem;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.radio-label{
+    width: 25px;
+    height: 25px;
+    border: 1px solid hsl(176, 50%, 47%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radio-label .checkmark{
+    width: calc(100% - 5%);
+    height:  calc(100% - 5%);
+    background-color: hsl(176, 50%, 47%);
+    border-radius: 50%;
+    display: none;
+}
+
+.radio-label input{
+    display: none;
+}
+.radio-label input:checked + .checkmark{
+    display: inline-block;
+}
+.label-part{
+    width: 10%;
+}
+
+.mahogany-pledging{
+    opacity: 0.5;
+    pointer-events: none;
+}
